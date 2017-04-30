@@ -3,6 +3,9 @@
 *%include "&root./&user./&env./&project./sas-code/50_convert_table_2_format.sas";
 
 *%let dateMinus2_mmddyy=%sysfunc(putn(%eval(%sysfunc(today())-2),mmddyyn6.));
+*************ADD Comment to program.
+*************;
+
 
 options obs=max compress=yes reuse=yes fmtsearch=(work table ) ls=64 ps=79
 	mprint symbolgen ORIENTATION=portrait papersize=letter ;
